@@ -733,7 +733,7 @@
       <workItem from="1540387297055" duration="244000" />
       <workItem from="1540387911277" duration="2097000" />
       <workItem from="1540392004401" duration="2667000" />
-      <workItem from="1540394958502" duration="585000" />
+      <workItem from="1540394958502" duration="615000" />
     </task>
     <task id="LOCAL-00001" summary="开发分支">
       <created>1540395386982</created>
@@ -759,11 +759,17 @@
       <option name="project" value="LOCAL" />
       <updated>1540395540807</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="开发分支">
+      <created>1540395547263</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1540395547263</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32815000" />
+    <option name="totallyTimeSpent" value="32845000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -776,7 +782,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="58" y="33" width="1194" height="665" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3268945" sideWeight="0.48624668" order="6" side_tool="false" content_ui="tabs" />
