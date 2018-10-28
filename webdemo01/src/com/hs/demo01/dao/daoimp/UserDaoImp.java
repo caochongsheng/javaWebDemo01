@@ -18,8 +18,6 @@ public class UserDaoImp implements UserDao {
     public void userRegist(User user) throws SQLException {
 
         JDBCUtils.getConnection();
-
-
         String sql = "select * from ikan_movie where sort_id=1 and type_id=1";
         QueryRunner qr = new QueryRunner(JDBCUtils.getDataSource());
 
