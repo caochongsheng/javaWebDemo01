@@ -20,7 +20,6 @@ public class UserDaoImp implements UserDao {
         JDBCUtils.getConnection();
         String sql = "select * from ikan_movie where sort_id=1 and type_id=1";
         QueryRunner qr = new QueryRunner(JDBCUtils.getDataSource());
-
         List<User> list = qr.query(sql, new BeanListHandler<User>(User.class));
 
         System.out.println("xxxxxx");
