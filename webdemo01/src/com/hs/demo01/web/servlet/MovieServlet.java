@@ -1,14 +1,14 @@
 package com.hs.demo01.web.servlet;
 
-import com.hs.demo01.dao.UsersDao;
+import com.hs.demo01.admin.User;
+import com.hs.demo01.dao.UserDao;
+import com.hs.demo01.dao.daoimp.UserDaoImp;
 import com.hs.demo01.web.base.BaseServlet;
 import org.apache.commons.beanutils.BeanUtils;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.io.UnsupportedEncodingException;
-import java.lang.reflect.InvocationTargetException;
+import java.sql.SQLException;
 import java.util.Map;
 
 /**
@@ -21,12 +21,13 @@ public class MovieServlet extends BaseServlet {
     public String registUI(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 
 
-
         Map<String, String[]> map =   req.getParameterMap();
 
 
-        UsersDao user = new UsersDao();
-        user.setId("我是一个ID");
+        User user = new User();
+
+
+
 
         try {
             BeanUtils.populate(user,map);
@@ -34,11 +35,19 @@ public class MovieServlet extends BaseServlet {
             e.printStackTrace();
         }
 
-        System.out.println(user.getName());
+
 
         System.out.println(user.toString());
 
 
+        UserDao userDao = new UserDaoImp();
+        try {
+            userDao.userRegist(user);
+        } catch (SQLException e) {
+            e.printStackTrace();
+            System.out.println("9999999");
+            System.out.println(e.getMessage());
+        }
 
 
         return "/index.jsp";
