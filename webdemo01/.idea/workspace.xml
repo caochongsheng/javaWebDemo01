@@ -6,9 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1d65fe2-223b-4739-87c4-95a744d136a2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="e1d65fe2-223b-4739-87c4-95a744d136a2" name="Default" comment="" />
     <ignored path="webdemo01.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -276,7 +274,7 @@
   <component name="MavenProjectNavigator">
     <treeState />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="90" />
     <option name="y" value="97" />
     <option name="width" value="1442" />
@@ -1012,7 +1010,7 @@
       <workItem from="1540392004401" duration="2667000" />
       <workItem from="1540394958502" duration="669000" />
       <workItem from="1540610647506" duration="19905000" />
-      <workItem from="1540866977522" duration="27762000" />
+      <workItem from="1540866977522" duration="27883000" />
     </task>
     <task id="LOCAL-00001" summary="开发分支">
       <created>1540395386982</created>
@@ -1081,7 +1079,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80566000" />
+    <option name="totallyTimeSpent" value="80687000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1093,7 +1091,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="90" y="97" width="1442" height="712" extended-state="1" />
+    <frame x="90" y="97" width="1442" height="712" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
