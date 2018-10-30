@@ -1,6 +1,6 @@
 package com.hs.demo01.web.filter;
 
-import com.hs.demo01.admin.User;
+import com.hs.demo01.bean.Movie;
 
 import java.io.IOException;
 
@@ -27,7 +27,7 @@ public class PriviledgeFilter implements Filter {
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
         HttpServletRequest myReq = (HttpServletRequest) request;
         //判断当前的session中是否存在已经登录成功的用户
-        User user = (User) myReq.getSession().getAttribute("loginUser");
+        Movie user = (Movie) myReq.getSession().getAttribute("loginUser");
         if (null != user) {
             //如果存在,放行
             chain.doFilter(request, response);

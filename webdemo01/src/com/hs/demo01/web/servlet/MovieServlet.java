@@ -1,14 +1,17 @@
 package com.hs.demo01.web.servlet;
 
-import com.hs.demo01.admin.User;
-import com.hs.demo01.dao.UserDao;
-import com.hs.demo01.dao.daoimp.UserDaoImp;
+import com.hs.demo01.bean.Movie;
+import com.hs.demo01.dao.MovieDao;
+import com.hs.demo01.dao.daoimp.MovieDaoImp;
 import com.hs.demo01.web.base.BaseServlet;
 import org.apache.commons.beanutils.BeanUtils;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -24,31 +27,31 @@ public class MovieServlet extends BaseServlet {
         Map<String, String[]> map =   req.getParameterMap();
 
 
-        User user = new User();
-
-
-
-
+        Movie user = new Movie();
         try {
             BeanUtils.populate(user,map);
         } catch (Exception e) {
             e.printStackTrace();
         }
 
-
-
         System.out.println(user.toString());
 
+        List<Movie> movies = null;
 
-        UserDao userDao = new UserDaoImp();
+        MovieDao userDao = new MovieDaoImp();
         try {
-            userDao.userRegist(user);
+            movies = userDao.findMovie();
         } catch (SQLException e) {
             e.printStackTrace();
-            System.out.println("9999999");
             System.out.println(e.getMessage());
         }
 
+        if (movies != null) {
+            System.out.println(movies);
+        }
+
+
+        req.getSession().setAttribute("movies", movies);
 
         return "/index.jsp";
     }
