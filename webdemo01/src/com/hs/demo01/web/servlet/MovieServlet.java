@@ -19,13 +19,9 @@ import java.util.Map;
  */
 public class MovieServlet extends BaseServlet {
 
-
-
-    public String registUI(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-
+    public String index(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 
         Map<String, String[]> map =   req.getParameterMap();
-
 
         Movie user = new Movie();
         try {
@@ -50,14 +46,18 @@ public class MovieServlet extends BaseServlet {
             System.out.println(movies);
         }
 
-
+        req.getSession().setAttribute("path", "views/admin/authList.jsp");
         req.getSession().setAttribute("movies", movies);
 
         return "/index.jsp";
     }
 
 
-
+    public String changePage(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+        String path = req.getParameter("path");
+        req.getSession().setAttribute("path", "views/admin/addAuth.jsp");
+        return "/index.jsp";
+    }
 
 
 }

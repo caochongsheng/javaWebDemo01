@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+<%@page import="java.util.List" %>
+<%@page import="java.util.ArrayList" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <html>
 <head>
     <meta charset="utf-8">
@@ -7,6 +11,7 @@
     <link rel="stylesheet" href="public/layui/css/layui.css">
 </head>
 <body class="layui-layout-body">
+
 <div class="layui-layout layui-layout-admin">
     <div class="layui-header">
         <div class="layui-logo">layui 后台布局</div>
@@ -67,9 +72,11 @@
     </div>
 
     <div class="layui-body">
+        <div>${path}</div>
+        <div>${movies}</div>
         <!-- 内容主体区域 -->
         <div style="padding: 15px; width: 100%; height: 100%;">
-            <iframe src="views/admin/authList.html?from=demo" frameborder="0" id="demoAdmin"
+            <iframe src="" frameborder="0" id="demoAdmin"
                     style="width: 100%; height: 100%;"></iframe>
         </div>
 
