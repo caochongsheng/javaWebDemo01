@@ -12,6 +12,7 @@ import javax.sql.DataSource;
 
 public class JDBCUtils {
     private static ComboPooledDataSource ds = new ComboPooledDataSource();
+
     private static ThreadLocal<Connection> tl = new ThreadLocal<Connection>();
 
     /**

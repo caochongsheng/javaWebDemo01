@@ -20,4 +20,6 @@ public interface AdminAuthDao {
     int updateAuth(AdminAuth auth) throws SQLException;
 
 
+
+
 }

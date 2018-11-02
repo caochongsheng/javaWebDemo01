@@ -11,11 +11,15 @@ public class AdminUserImp implements AdminUserDao {
 
     @Override
     public int insertUser(AdminUser user) throws SQLException {
+
+
         return 0;
     }
 
     @Override
     public List<AdminUser> selectAllUser() throws SQLException {
+
+
         return null;
     }
 

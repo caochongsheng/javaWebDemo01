@@ -20,6 +20,7 @@ public class MD5Utils {
         // 如果生成数字未满32位，需要前面补0
         for (int i = 0; i < 32 - md5code.length(); i++) {
             md5code = "0" + md5code;
+
         }
         return md5code;
     }
