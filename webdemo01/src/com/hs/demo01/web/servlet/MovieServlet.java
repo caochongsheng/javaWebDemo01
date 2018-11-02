@@ -6,6 +6,7 @@ import com.hs.demo01.dao.daoimp.MovieDaoImp;
 import com.hs.demo01.web.base.BaseServlet;
 import org.apache.commons.beanutils.BeanUtils;
 
+import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -53,10 +54,15 @@ public class MovieServlet extends BaseServlet {
     }
 
 
-    public String changePage(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+    public void changePage(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         String path = req.getParameter("path");
-        req.getSession().setAttribute("path", "views/admin/addAuth.jsp");
-        return "/index.jsp";
+        req.getSession().setAttribute("path", path);
+        try {
+            req.getRequestDispatcher(path).forward(req,resp);
+        } catch (ServletException e) {
+            e.printStackTrace();
+        }
+        //return "/index.jsp";
     }
 
 

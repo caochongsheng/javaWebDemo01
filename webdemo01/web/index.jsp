@@ -72,11 +72,9 @@
     </div>
 
     <div class="layui-body">
-        <div>${path}</div>
-        <div>${movies}</div>
         <!-- 内容主体区域 -->
         <div style="padding: 15px; width: 100%; height: 100%;">
-            <iframe src="" frameborder="0" id="demoAdmin"
+            <iframe src="${path}" frameborder="0" id="demoAdmin"
                     style="width: 100%; height: 100%;"></iframe>
         </div>
 

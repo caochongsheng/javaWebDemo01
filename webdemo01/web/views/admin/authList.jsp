@@ -52,36 +52,27 @@
     </tr>
     </thead>
     <tbody>
-    <tr>
-        <td>贤心</td>
-        <td>2016-11-29</td>
-        <td>人生就像是一场修行</td>
-        <td >
-            <button class="layui-btn layui-btn-sm">
-                <i class="layui-icon"></i>
-            </button>
-            <button class="layui-btn layui-btn-sm ">
-                <i class="layui-icon"></i>
-            </button>
-        </td>
-    </tr>
-    <tr>
-        <td>贤心</td>
-        <td>2016-11-29</td>
-        <td>人生就像是一场修行</td>
-        <td >
-            <button class="layui-btn layui-btn-sm">
-                <i class="layui-icon"></i>
-            </button>
-            <button class="layui-btn layui-btn-sm ">
-                <i class="layui-icon"></i>
-            </button>
-        </td>
-    </tr>
+    <c:forEach items="${movies}" var="movie">
+        <tr>
+            <td>${movie.title}</td>
+            <td>${movie.score}</td>
+            <td>${movie.actor}</td>
+            <td >
+                <button class="layui-btn layui-btn-sm">
+                    <i class="layui-icon"></i>
+                </button>
+                <button class="layui-btn layui-btn-sm ">
+                    <i class="layui-icon"></i>
+                </button>
+            </td>
+        </tr>
+    </c:forEach>
+
     </tbody>
 </table>
 
 <script src="../../public/layui/layui.js"></script>
+<script src="../../js/jquery-1.11.3.min.js"></script>
 <script>
     //JavaScript代码区域
     //Demo
@@ -97,11 +88,17 @@
         });
     });
 
-    $("add_auth").click(function(){
+    $(".add_auth").click(function(){
 
         <%
-            request.setAttribute("path","views/admin/addAuth.jsp");
+          request.getSession().setAttribute("path","www.baidu.com");
         %>
+
+      console.log("xxxxxxxxxxxxxxxxxx");
+
+        /*    window.location.href = "/test1?method=changePage&path=www.baidu.com";*/
+
+
 
     });
 
