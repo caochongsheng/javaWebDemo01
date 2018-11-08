@@ -89,14 +89,14 @@
     });
 
     $(".add_auth").click(function(){
+        console.log("xxxxxxxxxxxxxxxxxx");
+        window.location.href = "/test1?method=changePage&path=www.baidu.com";
 
-        <%
-          request.getSession().setAttribute("path","www.baidu.com");
-        %>
 
-      console.log("xxxxxxxxxxxxxxxxxx");
 
-        /*    window.location.href = "/test1?method=changePage&path=www.baidu.com";*/
+
+
+        /*    ;*/
 
 
 

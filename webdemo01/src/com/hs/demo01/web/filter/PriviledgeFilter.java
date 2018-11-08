@@ -35,7 +35,7 @@ public class PriviledgeFilter implements Filter {
             //如果不存在,转入到提示页面
             myReq.setAttribute("msg", "请用户登录之后再去访问");
             //转入到提示页面
-            myReq.getRequestDispatcher("/jsp/info.jsp").forward(request, response);
+            myReq.getRequestDispatcher("/views/admin/addAuth.jsp").forward(request, response);
         }
 
 

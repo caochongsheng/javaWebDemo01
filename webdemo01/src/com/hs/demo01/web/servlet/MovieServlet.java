@@ -10,6 +10,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import java.awt.datatransfer.StringSelection;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
@@ -57,11 +58,17 @@ public class MovieServlet extends BaseServlet {
     public void changePage(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         String path = req.getParameter("path");
         req.getSession().setAttribute("path", path);
-        try {
+
+
+
+
+        System.out.println(path);
+
+     /*   try {
             req.getRequestDispatcher(path).forward(req,resp);
         } catch (ServletException e) {
             e.printStackTrace();
-        }
+        }*/
         //return "/index.jsp";
     }
 
