@@ -10,8 +10,6 @@ public class AdminAuthImp implements AdminAuthDao {
     @Override
     public List<AdminAuth> selectAllAuths() throws SQLException {
 
-
-
         return null;
     }
 

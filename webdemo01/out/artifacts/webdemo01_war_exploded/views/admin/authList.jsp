@@ -52,11 +52,11 @@
     </tr>
     </thead>
     <tbody>
-    <c:forEach items="${movies}" var="movie">
+    <c:forEach items="${adminUsers}" var="user">
         <tr>
-            <td>${movie.title}</td>
-            <td>${movie.score}</td>
-            <td>${movie.actor}</td>
+            <td>${user.name}</td>
+            <td>${user.pwd}</td>
+            <td>${user.name}</td>
             <td >
                 <button class="layui-btn layui-btn-sm">
                     <i class="layui-icon"></i>
@@ -90,10 +90,7 @@
 
     $(".add_auth").click(function(){
         console.log("xxxxxxxxxxxxxxxxxx");
-        window.location.href = "/test1?method=changePage&path=www.baidu.com";
-
-
-
+        window.location.href = "/views/admin/addAuth.jsp";
 
 
         /*    ;*/

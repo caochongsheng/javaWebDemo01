@@ -17,6 +17,11 @@ public interface AdminUserDao {
      */
     int insertUser(AdminUser user) throws SQLException;
 
+
+     AdminUser selectAdminUser(AdminUser user) throws SQLException;
+
+     AdminUser selectAdminUserById(String id ) throws SQLException;
+
     /**
      * 查询所有后台管理用户列表
      *

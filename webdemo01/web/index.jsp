@@ -51,9 +51,9 @@
                 <li class="layui-nav-item layui-nav-itemed">
                     <a class="" href="javascript:;">用户管理</a>
                     <dl class="layui-nav-child">
-                        <dd><a href="javascript:;">权限列表</a></dd>
-                        <dd><a href="javascript:;">角色列表</a></dd>
-                        <dd><a href="javascript:;">管理员列表</a></dd>
+                        <dd  onclick="changeTab('http://localhost:8999/admin?method=getUserList')" ><a href="javascript:;">权限列表</a></dd>
+                        <dd  onclick="changeTab('http://localhost:8999/views/admin/addAuth.jsp')" ><a href="javascript:;">角色列表</a></dd>
+                        <dd  onclick="changeTab('http://localhost:8999/views/admin/authList.jsp')" ><a href="javascript:;">管理员列表</a></dd>
 
                     </dl>
                 </li>
@@ -73,8 +73,11 @@
 
     <div class="layui-body">
         <!-- 内容主体区域 -->
+        <%
+
+        %>
         <div style="padding: 15px; width: 100%; height: 100%;">
-            <iframe src="${path}" frameborder="0" id="demoAdmin"
+            <iframe src="${path}" frameborder="0" id="iframe_admin"
                     style="width: 100%; height: 100%;"></iframe>
         </div>
 
@@ -93,6 +96,23 @@
         var element = layui.element;
 
     });
+
+    window.onload=function(){
+        // 初始化内容
+
+        document.getElementById("iframe_admin").setAttribute("src",window.sessionStorage.getItem("path"));
+
+    }
+
+    function changeTab( url) {
+        console.log(url);
+        window.sessionStorage.setItem("path",url);
+        document.getElementById("iframe_admin").setAttribute("src",url);
+
+    }
+
+
+
 </script>
 </body>
 </html>
