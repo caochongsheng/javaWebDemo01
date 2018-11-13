@@ -55,9 +55,8 @@ public class IndexServlet extends BaseServlet {
         req.getSession().setAttribute("path", "views/admin/authList.jsp");
         req.getSession().setAttribute("adminUsers", adminUsers);
 
-        return "/index.jsp";
+        return "/views/admin/main.jsp";
     }
-
 
 
     public String getUserList(HttpServletRequest req, HttpServletResponse resp) throws IOException {
@@ -193,6 +192,10 @@ public class IndexServlet extends BaseServlet {
         }*/
         //return "/index.jsp";
     }
+
+
+
+
 
 
 }
