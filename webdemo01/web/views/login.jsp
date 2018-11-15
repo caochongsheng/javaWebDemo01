@@ -12,7 +12,7 @@
 
               <h3>${msg}</h3>
 
-<form class="layui-form" method="post" action="/admin?method=login" style="width: 50%;margin-left: 25%;margin-top: 25%;">
+<form class="layui-form" method="post" action="/login?method=login" style="width: 50%;margin-left: 25%;margin-top: 25%;">
     <div class="layui-form-item">
         <label class="layui-form-label">用户名</label>
         <div class="layui-input-block">

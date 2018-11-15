@@ -73,9 +73,7 @@
 
     <div class="layui-body">
         <!-- 内容主体区域 -->
-        <%
 
-        %>
         <div style="padding: 15px; width: 100%; height: 100%;">
             <iframe src="${path}" frameborder="0" id="iframe_admin"
                     style="width: 100%; height: 100%;"></iframe>
@@ -100,7 +98,13 @@
     window.onload=function(){
         // 初始化内容
 
-        document.getElementById("iframe_admin").setAttribute("src",window.sessionStorage.getItem("path"));
+
+
+       if(window.sessionStorage.getItem("path") != null){
+
+           document.getElementById("iframe_admin").setAttribute("src",window.sessionStorage.getItem("path"));
+       }
+
 
     }
 

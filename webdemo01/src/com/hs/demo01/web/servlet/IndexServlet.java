@@ -6,6 +6,7 @@ import com.hs.demo01.dao.AdminUserDao;
 import com.hs.demo01.dao.MovieDao;
 import com.hs.demo01.dao.adminImp.AdminUserImp;
 import com.hs.demo01.dao.daoimp.MovieDaoImp;
+import com.hs.demo01.dao.services.LoginService;
 import com.hs.demo01.utils.MD5Utils;
 import com.hs.demo01.web.base.BaseServlet;
 import org.apache.commons.beanutils.BeanUtils;
@@ -25,8 +26,18 @@ import java.util.Map;
  */
 public class IndexServlet extends BaseServlet {
 
-    public String index(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+    // 默认方法
+    public String execute(HttpServletRequest req, HttpServletResponse resp) throws Exception {
+        String method = req.getParameter("method");
 
+
+
+        System.out.println("execute-----------"+method);
+        return "/views/admin/main.jsp";
+    }
+
+    public String index(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+        System.out.println("index-----------");
         Map<String, String[]> map =   req.getParameterMap();
 
         Movie user = new Movie();
@@ -94,39 +105,7 @@ public class IndexServlet extends BaseServlet {
 
 
 
-    public void login(HttpServletRequest req, HttpServletResponse resp) throws IOException, SQLException, ServletException {
-        Map<String, String[]> map =   req.getParameterMap();
-        AdminUser user = new AdminUser();
-        try {
-            BeanUtils.populate(user,map);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
 
-        System.out.println(user.toString());
-        AdminUserDao adminUserDao = new AdminUserImp();
-        AdminUser resultUser =   adminUserDao.selectAdminUser(user);
-
-        if(resultUser != null ){
-             req.getSession().setAttribute("loginUser",resultUser);
-
-             req.getRequestDispatcher("/index.jsp").forward(req,resp);
-
-        }else {
-            req.setAttribute("msg", "用户名或者密码错误，请重新登录");
-
-        }
-
-
-
-
-     /*   try {
-            req.getRequestDispatcher(path).forward(req,resp);
-        } catch (ServletException e) {
-            e.printStackTrace();
-        }*/
-        //return "/index.jsp";
-    }
 
     public String addAdminUser(HttpServletRequest req, HttpServletResponse resp) throws IOException, SQLException, ServletException {
 

@@ -5,9 +5,6 @@ CREATE TABLE ikan_admin_user (
   COMMENT '管理员姓名',
   pwd     VARCHAR(32)         NOT NULL DEFAULT ''
   COMMENT '管理员密码',
-  role_id TINYINT(3) UNSIGNED NOT NULL DEFAULT '0'
-  COMMENT '角色id',
-
   PRIMARY KEY (id),
   UNIQUE KEY (name)
 )
@@ -47,9 +44,6 @@ CREATE TABLE ikan_admin_role (
   COMMENT '角色名称',
   role_desc    VARCHAR(32)       NOT NULL DEFAULT ''
   COMMENT '角色描述',
-  auth_ids     VARCHAR(128)      NOT NULL DEFAULT ''
-  COMMENT '权限ids',
-  role_auth_ac TEXT COMMENT '控制器-方法',
   PRIMARY KEY (id),
   UNIQUE KEY (name)
 )

@@ -1,6 +1,8 @@
 package com.hs.demo01.web.base;
 
 
+import com.mchange.v2.log.LogUtils;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -14,16 +16,15 @@ import java.lang.reflect.Method;
 public class BaseServlet  extends HttpServlet{
 
 
+
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         // localhost:8080/store/productServlet?method=addProduct
         String method = req.getParameter("method");
-
-
+        System.out.println("method----"+method +"==="+req.getMethod());
         if (null == method || "".equals(method) || method.trim().equals("")) {
             method = "execute";
         }
-
         // 注意:此处的this代表的是子类的对象
         // System.out.println(this);
         // 子类对象字节码对象
@@ -42,9 +43,6 @@ public class BaseServlet  extends HttpServlet{
             e.printStackTrace();
         }
     }
-
-
-
 
 
     // 默认方法

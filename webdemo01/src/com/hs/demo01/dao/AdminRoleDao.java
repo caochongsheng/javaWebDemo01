@@ -8,8 +8,6 @@ public interface AdminRoleDao {
 
     int insert(AdminRole role) throws SQLException;
 
-
-
     AdminRole selectRoleById(String id) throws SQLException;
 
 
