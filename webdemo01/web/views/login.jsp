@@ -41,6 +41,7 @@
 <script>
     //JavaScript代码区域
     //Demo
+
     layui.use('form', function () {
         var form = layui.form;
 

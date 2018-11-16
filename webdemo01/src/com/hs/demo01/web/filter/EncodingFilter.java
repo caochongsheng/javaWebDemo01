@@ -32,6 +32,12 @@ public class EncodingFilter implements Filter {
         //1.强转
         HttpServletRequest request = (HttpServletRequest) req;
         HttpServletResponse response = (HttpServletResponse) resp;
+        Map<String, String[]> parameterMap = req.getParameterMap();
+
+        for (Map.Entry<String, String[]> entry : parameterMap.entrySet()) {
+            System.out.println("filter----"+"Key = " + entry.getKey() + ", Value = " + entry.getValue()[0]);
+        }
+
         //System.out.println("@@@@@@@@@@@@@@@@@@");
         //2.放行
         chain.doFilter(new MyRequest(request), response);

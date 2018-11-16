@@ -18,9 +18,9 @@ public class AdminUserImp implements AdminUserDao {
     public int insertUser(AdminUser user) throws SQLException {
 
             JDBCUtils.getConnection();
-            String sql = "insert into ikan_admin_user(name,pwd,role_id)values(?,?,?)";
+            String sql = "insert into ikan_admin_user(name,pwd)values(?,?)";
                 QueryRunner qr = new QueryRunner(JDBCUtils.getDataSource());
-                Object[] params={user.getName(),user.getPwd(),0};
+                Object[] params={user.getName(),user.getPwd()};
         return  qr.update(sql,params);
     }
 

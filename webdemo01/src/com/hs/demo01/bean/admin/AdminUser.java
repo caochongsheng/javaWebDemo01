@@ -7,6 +7,5 @@ public class AdminUser {
     Integer id;
     String name;
     String pwd;
-    String role_id;
 
 }

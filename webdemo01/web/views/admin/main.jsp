@@ -40,7 +40,7 @@
                     <dd><a href="">安全设置</a></dd>
                 </dl>
             </li>
-            <li class="layui-nav-item"><a href="">退了</a></li>
+            <li class="layui-nav-item"><a href="${pageContext.request.contextPath}/login?method=loginOut">退了</a></li>
         </ul>
     </div>
 
@@ -51,9 +51,9 @@
                 <li class="layui-nav-item layui-nav-itemed">
                     <a class="" href="javascript:;">用户管理</a>
                     <dl class="layui-nav-child">
-                        <dd  onclick="changeTab('http://localhost:8999/admin?method=getUserList')" ><a href="javascript:;">权限列表</a></dd>
-                        <dd  onclick="changeTab('http://localhost:8999/views/admin/addAuth.jsp')" ><a href="javascript:;">角色列表</a></dd>
-                        <dd  onclick="changeTab('http://localhost:8999/views/admin/authList.jsp')" ><a href="javascript:;">管理员列表</a></dd>
+                        <dd  onclick="changeTab('${pageContext.request.contextPath}/admin?method=getUserList')" ><a href="javascript:;">权限列表</a></dd>
+                        <dd  onclick="changeTab('${pageContext.request.contextPath}/views/admin/addAuth.jsp')" ><a href="javascript:;">角色列表</a></dd>
+                        <dd  onclick="changeTab('${pageContext.request.contextPath}/views/admin/authList.jsp')" ><a href="javascript:;">管理员列表</a></dd>
 
                     </dl>
                 </li>

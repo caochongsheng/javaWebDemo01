@@ -30,8 +30,6 @@ public class IndexServlet extends BaseServlet {
     public String execute(HttpServletRequest req, HttpServletResponse resp) throws Exception {
         String method = req.getParameter("method");
 
-
-
         System.out.println("execute-----------"+method);
         return "/views/admin/main.jsp";
     }

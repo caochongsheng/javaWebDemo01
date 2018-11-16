@@ -8,6 +8,7 @@ import com.hs.demo01.web.base.BaseServlet;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.PrintWriter;
 import java.sql.SQLException;
 import java.util.List;
 
@@ -35,23 +36,33 @@ public class LoginServlet extends BaseServlet {
                 System.out.println(e.getMessage());
             }
 
-
-
             req.getSession().setAttribute("path", "views/admin/authList.jsp");
             req.getSession().setAttribute("adminUsers", adminUsers);
 
-            return "/views/admin/main.jsp";
+            resp.sendRedirect("/index.jsp");
+
+            return null;
 
         }else {
             req.setAttribute("msg", "用户名或者密码错误，请重新登录");
-
-            return null;
+            return "views/login.jsp";
         }
 
 
-
-
     }
+
+
+
+    // 默认方法
+    public String loginOut(HttpServletRequest req, HttpServletResponse response) throws Exception {
+
+        req.getSession().removeAttribute("loginUser");
+        PrintWriter out = response.getWriter();
+        out.println("<script language='javascript'> window.location.replace('/views/login.jsp'); </script>");
+
+        return null;
+    }
+
 
 
 
