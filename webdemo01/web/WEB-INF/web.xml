@@ -39,6 +39,15 @@
         <servlet-name>AuthServlet</servlet-name>
         <url-pattern>/private</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>AdminUserServlet</servlet-name>
+        <servlet-class>com.hs.demo01.web.servlet.AdminUserServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AdminUserServlet</servlet-name>
+        <url-pattern>/adminUser</url-pattern>
+    </servlet-mapping>
 
 
     <filter>

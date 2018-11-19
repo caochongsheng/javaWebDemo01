@@ -61,7 +61,17 @@ public class AdminUserImp implements AdminUserDao {
 
     @Override
     public List<AdminRole> selectRolesByUser(AdminUser user) throws SQLException {
-        return null;
+
+        JDBCUtils.getConnection();
+        String sql = "select * from ikan_admin_user_role where user_id=?";
+        QueryRunner qr = new QueryRunner(JDBCUtils.getDataSource());
+        List<AdminRole> list = qr.query(sql, new BeanListHandler<AdminRole>(AdminRole.class),user.getId());
+        return list;
+    }
+
+    @Override
+    public int deleteAdminUserById(int userId) throws Exception {
+        return 0;
     }
 
     @Override

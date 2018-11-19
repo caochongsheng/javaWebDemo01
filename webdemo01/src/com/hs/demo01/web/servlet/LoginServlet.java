@@ -1,6 +1,8 @@
 package com.hs.demo01.web.servlet;
 
+import com.hs.demo01.bean.admin.AdminAuth;
 import com.hs.demo01.bean.admin.AdminUser;
+
 import com.hs.demo01.dao.AdminUserDao;
 import com.hs.demo01.dao.adminImp.AdminUserImp;
 import com.hs.demo01.dao.services.LoginService;
@@ -10,10 +12,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.PrintWriter;
 import java.sql.SQLException;
+import java.util.Calendar;
 import java.util.List;
+import java.util.Map;
 
 public class LoginServlet extends BaseServlet {
-
 
     // 登录接口
     public String login(HttpServletRequest req, HttpServletResponse resp) throws Exception {
@@ -36,9 +39,11 @@ public class LoginServlet extends BaseServlet {
                 System.out.println(e.getMessage());
             }
 
+            Map<AdminAuth,List<AdminAuth>> meuns = loginService.getHomeMenus(resultUser);
+            System.out.println(meuns.toString());
+            req.getSession().setAttribute("menus",meuns);
             req.getSession().setAttribute("path", "views/admin/authList.jsp");
             req.getSession().setAttribute("adminUsers", adminUsers);
-
             resp.sendRedirect("/index.jsp");
 
             return null;

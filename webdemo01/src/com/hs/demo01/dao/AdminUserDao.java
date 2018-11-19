@@ -38,6 +38,14 @@ public interface AdminUserDao {
      */
     List<AdminRole> selectRolesByUser(AdminUser user) throws SQLException;
 
+    /**
+     * 删除管理员
+     * @param userId
+     * @return
+     * @throws Exception
+     */
+    int deleteAdminUserById(int userId) throws  Exception;
+
 
     /**
      * 删除用户所有角色

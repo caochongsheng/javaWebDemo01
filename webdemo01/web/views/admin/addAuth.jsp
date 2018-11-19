@@ -11,17 +11,42 @@
 <body>
 <form class="layui-form" method="post" action="/admin?method=addAdminUser" style="width: 50%;">
     <div class="layui-form-item">
-        <label class="layui-form-label">用户名</label>
+        <label class="layui-form-label">权限名称</label>
         <div class="layui-input-block">
             <input type="text" name="name" required lay-verify="required" placeholder="请输入标题" autocomplete="off"
                    class="layui-input">
         </div>
     </div>
 
-    <div class="layui-form-item">
-        <label class="layui-form-label">密码</label>
+    <div class="layui-form-item"  >
+        <label class="layui-form-label">所属</label>
         <div class="layui-input-block">
-            <input type="password" name="pwd" required lay-verify="required" placeholder="请输入标题" autocomplete="off"
+            <select name="pid" lay-verify="required">
+                <option value="0">开启</option>
+                <option value="1">关闭</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">控制器</label>
+        <div class="layui-input-block">
+            <input type="text" name="controller" required lay-verify="required" placeholder="控制器名称" autocomplete="off"
+                   class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">方法</label>
+        <div class="layui-input-block">
+            <input type="text" name="action" required lay-verify="required" placeholder="方法名称" autocomplete="off"
+                   class="layui-input">
+        </div>
+    </div>
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">路径</label>
+        <div class="layui-input-block">
+            <input type="text" name="path" required lay-verify="required" placeholder="方法名称" autocomplete="off"
                    class="layui-input">
         </div>
     </div>

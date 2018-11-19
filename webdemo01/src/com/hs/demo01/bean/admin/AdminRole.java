@@ -1,5 +1,8 @@
 package com.hs.demo01.bean.admin;
 
+import lombok.Data;
+
+@Data
 public class AdminRole {
 
     Integer id; // 角色id

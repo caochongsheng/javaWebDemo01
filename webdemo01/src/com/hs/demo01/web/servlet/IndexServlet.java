@@ -6,6 +6,9 @@ import com.hs.demo01.dao.AdminUserDao;
 import com.hs.demo01.dao.MovieDao;
 import com.hs.demo01.dao.adminImp.AdminUserImp;
 import com.hs.demo01.dao.daoimp.MovieDaoImp;
+import com.hs.demo01.dao.services.AdminUserServiceDao;
+import com.hs.demo01.dao.services.AdminUserServiceImp;
+import com.hs.demo01.dao.services.AuthService;
 import com.hs.demo01.dao.services.LoginService;
 import com.hs.demo01.utils.MD5Utils;
 import com.hs.demo01.web.base.BaseServlet;
@@ -38,31 +41,7 @@ public class IndexServlet extends BaseServlet {
         System.out.println("index-----------");
         Map<String, String[]> map =   req.getParameterMap();
 
-        Movie user = new Movie();
-        try {
-            BeanUtils.populate(user,map);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        System.out.println(user.toString());
-
-        List<AdminUser> adminUsers = null;
-
-        AdminUserDao adminUserDao = new AdminUserImp();
-        try {
-            adminUsers = adminUserDao.selectAllUser();
-        } catch (SQLException e) {
-            e.printStackTrace();
-            System.out.println(e.getMessage());
-        }
-
-        if (adminUsers != null) {
-            System.out.println(adminUsers);
-        }
-
-        req.getSession().setAttribute("path", "views/admin/authList.jsp");
-        req.getSession().setAttribute("adminUsers", adminUsers);
+        AuthService authService = new AuthService();
 
         return "/views/admin/main.jsp";
     }
@@ -156,19 +135,7 @@ public class IndexServlet extends BaseServlet {
 
 
     }
-    public void changePage(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        String path = req.getParameter("path");
-        req.getSession().setAttribute("path", path);
 
-        System.out.println(path);
-
-     /*   try {
-            req.getRequestDispatcher(path).forward(req,resp);
-        } catch (ServletException e) {
-            e.printStackTrace();
-        }*/
-        //return "/index.jsp";
-    }
 
 
 

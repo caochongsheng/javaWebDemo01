@@ -7,7 +7,7 @@ public class AdminAuth {
 
     Integer id;
     String name;
-    String pid;
+    int pid;
     String controler;
     String action;
     String path;

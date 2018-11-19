@@ -19,7 +19,7 @@ public class AuthService {
 
     public  int addAuth(AdminAuth auth) throws Exception {
 
-        return authDao.insertAuth(auth);
+          return authDao.insertAuth(auth);
     }
 
 
