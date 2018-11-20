@@ -7,38 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1d65fe2-223b-4739-87c4-95a744d136a2" name="Default" comment="修改添加权限布局文件">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/hs/demo01/bean/admin/AdminAdminister.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/hs/demo01/dao/adminImp/AdminRoleImp.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/hs/demo01/dao/services/AdminUserServiceDao.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/hs/demo01/dao/services/AdminUserServiceImp.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/hs/demo01/web/servlet/AdminUserServlet.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/views/admin/addAdminUser.jsp" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/com/hs/demo01/bean/admin/AdminAuth.java" afterPath="$PROJECT_DIR$/src/com/hs/demo01/bean/admin/AdminAuth.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/hs/demo01/bean/admin/AdminRole.java" afterPath="$PROJECT_DIR$/src/com/hs/demo01/bean/admin/AdminRole.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/hs/demo01/dao/AdminAuthDao.java" afterPath="$PROJECT_DIR$/src/com/hs/demo01/dao/AdminAuthDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/hs/demo01/dao/AdminUserDao.java" afterPath="$PROJECT_DIR$/src/com/hs/demo01/dao/AdminUserDao.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/hs/demo01/dao/adminImp/AdminAuthImp.java" afterPath="$PROJECT_DIR$/src/com/hs/demo01/dao/adminImp/AdminAuthImp.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/hs/demo01/dao/adminImp/AdminUserImp.java" afterPath="$PROJECT_DIR$/src/com/hs/demo01/dao/adminImp/AdminUserImp.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/hs/demo01/dao/services/AuthService.java" afterPath="$PROJECT_DIR$/src/com/hs/demo01/dao/services/AuthService.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/hs/demo01/dao/services/LoginService.java" afterPath="$PROJECT_DIR$/src/com/hs/demo01/dao/services/LoginService.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/hs/demo01/web/servlet/AuthServlet.java" afterPath="$PROJECT_DIR$/src/com/hs/demo01/web/servlet/AuthServlet.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/hs/demo01/web/servlet/IndexServlet.java" afterPath="$PROJECT_DIR$/src/com/hs/demo01/web/servlet/IndexServlet.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/hs/demo01/web/servlet/LoginServlet.java" afterPath="$PROJECT_DIR$/src/com/hs/demo01/web/servlet/LoginServlet.java" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/hs/demo01/bean/admin/AdminAuth.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/hs/demo01/bean/admin/AdminAuth.class" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/hs/demo01/bean/admin/AdminRole.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/hs/demo01/bean/admin/AdminRole.class" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/hs/demo01/dao/AdminAuthDao.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/com/hs/demo01/dao/AdminAuthDao.class" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/hs/demo01/dao/AdminUserDao.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/hs/demo01/dao/adminImp/AdminAuthImp.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/hs/demo01/dao/adminImp/AdminUserImp.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/hs/demo01/dao/services/LoginService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/hs/demo01/web/servlet/AuthServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/hs/demo01/web/servlet/IndexServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/com/hs/demo01/web/servlet/LoginServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-      <change beforePath="$PROJECT_DIR$/web/views/admin/addAuth.jsp" afterPath="$PROJECT_DIR$/web/views/admin/addAuth.jsp" />
       <change beforePath="$PROJECT_DIR$/web/views/admin/authList.jsp" afterPath="$PROJECT_DIR$/web/views/admin/authList.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/views/admin/main.jsp" afterPath="$PROJECT_DIR$/web/views/admin/main.jsp" />
     </list>
     <ignored path="webdemo01.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -159,8 +128,8 @@
       <file leaf-file-name="authList.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/views/admin/authList.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="60" column="33" lean-forward="true" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
+            <state relative-caret-position="200">
+              <caret line="44" column="23" lean-forward="false" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -316,7 +285,7 @@
   <component name="MavenProjectNavigator">
     <treeState />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1369" />
@@ -1075,7 +1044,7 @@
       <workItem from="1541647685153" duration="29422000" />
       <workItem from="1541987677432" duration="4542000" />
       <workItem from="1542260264871" duration="19199000" />
-      <workItem from="1542339759010" duration="30898000" />
+      <workItem from="1542339759010" duration="31274000" />
     </task>
     <task id="LOCAL-00001" summary="开发分支">
       <created>1540395386982</created>
@@ -1151,7 +1120,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="168234000" />
+    <option name="totallyTimeSpent" value="168610000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1163,10 +1132,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46370968" sideWeight="0.19280206" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4717742" sideWeight="0.19280206" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31317204" sideWeight="0.32969153" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32860717" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1182,7 +1152,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32417583" sideWeight="0.6331126" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46370968" sideWeight="0.8071979" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4717742" sideWeight="0.8071979" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32392472" sideWeight="0.4826478" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41801074" sideWeight="0.73007715" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22686376" sideWeight="0.75" order="0" side_tool="false" content_ui="combo" />
@@ -1621,8 +1591,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/views/admin/authList.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="60" column="33" lean-forward="true" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
+        <state relative-caret-position="200">
+          <caret line="44" column="23" lean-forward="false" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
           <folding />
         </state>
       </provider>

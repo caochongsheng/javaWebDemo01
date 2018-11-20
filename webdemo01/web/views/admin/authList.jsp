@@ -38,10 +38,11 @@
 
 <table class="layui-table" style="width: 90%">
     <colgroup>
-        <col width="100">
-        <col width="60">
-        <col width="250">
-        <col width="60">
+        <col width="200">
+        <col width="200">
+        <col width="200">
+        <col width="350">
+        <col width="150">
     </colgroup>
     <thead>
     <tr>
